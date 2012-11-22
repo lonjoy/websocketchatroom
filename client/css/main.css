@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+body{
+	overflow: hidden;
+}
+
+#messageField{
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 20px;
+	background-color: #AAA;
+}
+
+#status{
+	clear: both;
+	padding: 10px;
+	border-top: 1px solid #999;
+	background-color: #CCC;
+	color: #666;
+}
+
+#messageList{
+	padding: 10px;
+	list-style: none;
+}
+#messageList > li{
+	margin-bottom: 10px;
+}
+#messageList > li.me{
+	text-align: right;
+	color: #999;
+}
+#messageList > li img{
+	border-radius: 10px;
+}
+
+#gangnamList{
+	position: fixed;
+	bottom: -105px;
+	padding: 20px 0;
+	background-color: #AAA;
+	-webkit-transition: all 100ms ease-in;
+}
+#gangnamList:hover{
+	bottom: 0;
+}
+img.gangnam{
+	width: 50px;
+	float: left;
+	cursor: pointer;
+	-webkit-transition: all 100ms ease-out;
+}
+img.gangnam:hover{
+	-webkit-transform: scale(2);
+}
